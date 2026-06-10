@@ -44,6 +44,8 @@ class TriviaGameEngine: ObservableObject {
     
     @Published var confettiTrigger: Int = 0
     @Published var balloonTrigger: Int = 0
+    @Published var heartsTrigger: Int = 0
+
     
     private var saveFileURL: URL {
         FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
@@ -91,6 +93,10 @@ class TriviaGameEngine: ObservableObject {
             
             if question.points == 300 && awardedToTeam != nil {
                 balloonTrigger += 1
+            }
+            
+            if question.points == 400 && awardedToTeam != nil {
+                heartsTrigger += 1
             }
             
             saveGame()
@@ -253,6 +259,8 @@ struct ContentView: View {
             ConfettiView(trigger: $game.confettiTrigger)
                 .allowsHitTesting(false)
             BalloonView(trigger: $game.balloonTrigger)
+                .allowsHitTesting(false)
+            HeartView(trigger: $game.heartsTrigger)
                 .allowsHitTesting(false)
         }
         .frame(minWidth: 950, minHeight: 550)
