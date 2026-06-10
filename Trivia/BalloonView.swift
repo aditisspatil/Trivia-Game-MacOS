@@ -35,6 +35,8 @@ struct BalloonView: View {
     @Binding var trigger: Int
     @State private var particles: [BalloonParticle] = []
     @State private var animate = false
+    
+    @StateObject private var audioManager = AudioManager()
 
     let colors: [Color] = [
         .red, .pink, .purple, .orange, .yellow, .mint
@@ -59,7 +61,11 @@ struct BalloonView: View {
                         )
                 }
             }
-            .onChange(of: trigger) {
+            .onChange(of: trigger) { _ in
+                // 2. Play the sound! (Make sure the name matches your file exactly)
+                audioManager.playSound(soundName: "confetti", fileExtension: "mp3")
+                
+                // 3. Trigger the animation
                 launchBalloons(geo: geo)
             }
         }

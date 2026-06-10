@@ -1,5 +1,6 @@
 import SwiftUI
 
+
 // MARK: - Chaotic, Physics-Based Falling System
 struct ConfettiParticle: Identifiable {
     let id = UUID()
@@ -29,6 +30,8 @@ struct ConfettiView: View {
     @State private var exploded = false
     @State private var gravityApplied = false
     
+    @StateObject private var audioManager = AudioManager()
+    
     let colors: [Color] = [
         Color(red: 1.0, green: 0.1, blue: 0.1),
         Color(red: 0.0, green: 1.0, blue: 1.0),
@@ -56,7 +59,13 @@ struct ConfettiView: View {
                 }
             }
             .position(x: geo.size.width / 2, y: geo.size.height+100 )
-            .onChange(of: trigger) { _ in igniteFireworks() }
+            .onChange(of: trigger) { _ in
+                            // 2. Play the sound! (Make sure the name matches your file exactly)
+                            audioManager.playSound(soundName: "confetti", fileExtension: "mp3")
+                            
+                            // 3. Trigger the animation
+                            igniteFireworks()
+                        }
         }
     }
     
