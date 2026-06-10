@@ -55,7 +55,7 @@ struct ConfettiView: View {
                         .opacity(gravityApplied ? 0 : 1)
                 }
             }
-            .position(x: geo.size.width / 2, y: geo.size.height / 2)
+            .position(x: geo.size.width / 2, y: geo.size.height+100 )
             .onChange(of: trigger) { _ in igniteFireworks() }
         }
     }
@@ -68,8 +68,8 @@ struct ConfettiView: View {
         let blastDuration = 1.0 // Explosion happens in first second
         
         particles = (0..<1000).map { _ in
-            let angle = Double.random(in: 0...(2 * .pi))
-            let speed = CGFloat.random(in: 200...1200)
+            let angle = Double.random(in: (-.pi*5.8/6) ... (-.pi*0.2/6))
+            let speed = CGFloat.random(in: 100...1300)
             
             return ConfettiParticle(
                 targetX: cos(angle) * speed,
