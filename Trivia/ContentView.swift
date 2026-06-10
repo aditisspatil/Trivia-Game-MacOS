@@ -43,6 +43,7 @@ class TriviaGameEngine: ObservableObject {
     @Published var team2Score: Int = 0
     
     @Published var confettiTrigger: Int = 0
+    @Published var heartsTrigger: Int = 0
     
     private var saveFileURL: URL {
         FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
@@ -84,8 +85,12 @@ class TriviaGameEngine: ObservableObject {
                 team2Score += question.points
             }
             
-            if awardedToTeam != nil {
+            if awardedToTeam != nil && question.points == 100  {
                 confettiTrigger += 1
+            }
+            
+            if question.points == 300 && awardedToTeam != nil {
+                heartsTrigger += 1
             }
             
             saveGame()
@@ -247,6 +252,8 @@ struct ContentView: View {
             
             ConfettiView(trigger: $game.confettiTrigger)
                 .allowsHitTesting(false)
+            HeartsView(trigger: $game.heartsTrigger)
+                .allowsHitTesting(false)
         }
         .frame(minWidth: 950, minHeight: 550)
         // CHANGED: Using .sheet instead of .popover for the pamphlet feel!
@@ -322,3 +329,4 @@ struct GameSettingsView: View {
         .frame(width: 280)
     }
 }
+
