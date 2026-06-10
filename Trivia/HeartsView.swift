@@ -18,7 +18,7 @@ struct BalloonShape: Shape {
 }
 
 // MARK: - Animated, Screen-Filling Hearts Effect
-struct HeartParticle: Identifiable {
+struct BalloonParticle: Identifiable {
     let id = UUID()
     let startX: CGFloat
     let endX: CGFloat
@@ -31,9 +31,9 @@ struct HeartParticle: Identifiable {
     let rotation: Double
 }
 
-struct HeartsView: View {
+struct BalloonView: View {
     @Binding var trigger: Int
-    @State private var particles: [HeartParticle] = []
+    @State private var particles: [BalloonParticle] = []
     @State private var animate = false
 
     let colors: [Color] = [
@@ -60,12 +60,12 @@ struct HeartsView: View {
                 }
             }
             .onChange(of: trigger) {
-                launchHearts(geo: geo)
+                launchBalloons(geo: geo)
             }
         }
     }
 
-    func launchHearts(geo: GeometryProxy) {
+    func launchBalloons(geo: GeometryProxy) {
         animate = false
         let width = geo.size.width
         let height = geo.size.height
@@ -82,7 +82,7 @@ struct HeartsView: View {
             let delay = Double.random(in: 0.0...2.0)
             let rotation = Double.random(in: -50...5)
 
-            return HeartParticle(
+            return BalloonParticle(
                 startX: startX,
                 endX: endX,
                 startY: startY,
