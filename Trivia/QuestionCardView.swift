@@ -125,14 +125,27 @@ struct QuestionPopupView: View {
                 .padding(.horizontal, 20)
             
         case .image:
-            VStack(spacing: 20) {
-                Image(systemName: "photo.artframe")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(height: 220)
-                    .foregroundColor(team1Mint)
-                Text(text).font(.title2).foregroundColor(.white)
-            }
+                    VStack(spacing: 20) {
+                        // 1. Check if we actually have an image name from the Plist
+                        if !resourceName.isEmpty {
+                            // 2. Load the real image from the Asset Catalog
+                            Image(resourceName)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(height: 250) // Adjusted height slightly so it looks good
+                                .cornerRadius(12)
+                                .shadow(radius: 5)
+                        } else {
+                            // Fallback just in case you forgot to add a name in the Plist
+                            Image(systemName: "photo.artframe")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(height: 220)
+                                .foregroundColor(team1Mint)
+                        }
+                        
+                        Text(text).font(.title2).foregroundColor(.white)
+                    }
             
         case .audio:
             VStack(spacing: 20) {

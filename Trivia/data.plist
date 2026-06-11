@@ -4,7 +4,7 @@
 <array>
 	<dict>
 		<key>name</key>
-		<string>General Text</string>
+		<string>Name Them!</string>
 		<key>questions</key>
 		<array>
 			<dict>
@@ -13,17 +13,17 @@
 				<key>category</key>
 				<string>General Text</string>
 				<key>questionText</key>
-				<string>What is the capital of France?</string>
+				<string>Name all 6 main characters from the TV show Friends using both their first and last names.</string>
 				<key>questionType</key>
 				<string>text</string>
 				<key>mediaResourceName</key>
 				<string></string>
 				<key>answerText</key>
-				<string>Paris</string>
-				<key>answerType</key>
-				<string>text</string>
-				<key>answerMediaResourceName</key>
 				<string></string>
+				<key>answerType</key>
+				<string>image</string>
+				<key>answerMediaResourceName</key>
+				<string>friends_answer</string>
 				<key>isAnswered</key>
 				<false/>
 			</dict>
@@ -31,15 +31,15 @@
 				<key>points</key>
 				<integer>200</integer>
 				<key>category</key>
-				<string>General Text</string>
+				<string>Name Them!</string>
 				<key>questionText</key>
-				<string>What is 5 + 7?</string>
+				<string>Name 5 different sports, and pair each with one famous athlete who plays it.</string>
 				<key>questionType</key>
 				<string>text</string>
 				<key>mediaResourceName</key>
 				<string></string>
 				<key>answerText</key>
-				<string>12</string>
+				<string>Cricket: Virat Kohli, Football: Lionel Messi, Tennis: Serena Williams, Basketball: LeBron James, Badminton: Saina Nehwal</string>
 				<key>answerType</key>
 				<string>text</string>
 				<key>answerMediaResourceName</key>
@@ -51,15 +51,35 @@
 				<key>points</key>
 				<integer>300</integer>
 				<key>category</key>
-				<string>General Text</string>
+				<string>Name Them!</string>
 				<key>questionText</key>
-				<string>Who wrote Hamlet?</string>
+				<string>Name all 6 Infinity Stones collected by Thanos in the Marvel Cinematic Universe.</string>
+				<key>questionType</key>
+				<string>image</string>
+				<key>mediaResourceName</key>
+				<string>gauntlet</string>
+				<key>answerText</key>
+				<string></string>
+				<key>answerType</key>
+				<string>image</string>
+				<key>answerMediaResourceName</key>
+				<string>stones</string>
+				<key>isAnswered</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>points</key>
+				<integer>300</integer>
+				<key>category</key>
+				<string>Name Them!</string>
+				<key>questionText</key>
+				<string>Name 5 official National Parks or State Parks located in the United States.</string>
 				<key>questionType</key>
 				<string>text</string>
 				<key>mediaResourceName</key>
 				<string></string>
 				<key>answerText</key>
-				<string>William Shakespeare</string>
+				<string>Yellowstone, Yosemite, Grand Canyon, Zion, Acadia, Glacier</string>
 				<key>answerType</key>
 				<string>text</string>
 				<key>answerMediaResourceName</key>
@@ -69,37 +89,23 @@
 			</dict>
 			<dict>
 				<key>points</key>
-				<integer>400</integer>
+				<integer>300</integer>
 				<key>category</key>
-				<string>General Text</string>
+				<string>Name Them!</string>
 				<key>questionText</key>
-				<string>What is the boiling point of water in C?</string>
+				<string>Name all 4 Hogwarts houses along with the full names of their original historical founders.</string>
 				<key>questionType</key>
 				<string>text</string>
 				<key>mediaResourceName</key>
 				<string></string>
 				<key>answerText</key>
-				<string>100°C</string>
-				<key>answerType</key>
-				<string>text</string>
-				<key>answerMediaResourceName</key>
-				<string></string>
-				<key>isAnswered</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>points</key>
-				<integer>500</integer>
-				<key>category</key>
-				<string>General Text</string>
-				<key>questionText</key>
-				<string>Who is the CEO of Apple?</string>
-				<key>questionType</key>
-				<string>text</string>
-				<key>mediaResourceName</key>
-				<string></string>
-				<key>answerText</key>
-				<string>Tim Cook</string>
+				<string>Gryffindor – Godric Gryffindor
+
+Slytherin – Salazar Slytherin
+
+Ravenclaw – Rowena Ravenclaw
+
+Hufflepuff – Helga Hufflepuff</string>
 				<key>answerType</key>
 				<string>text</string>
 				<key>answerMediaResourceName</key>
