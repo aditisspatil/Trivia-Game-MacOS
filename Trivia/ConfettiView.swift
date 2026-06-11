@@ -52,10 +52,13 @@ struct ConfettiView: View {
                     // Blast Out
                         .offset(x: exploded ? particle.targetX : 0, y: exploded ? particle.targetY : 0)
                         .animation(.timingCurve(0.1, 0.8, 0.2, 1, duration: 1.5), value: exploded)
+                    
                     // Unique Gravity Fall
                         .offset(y: gravityApplied ? (800 * particle.fallSpeed) : 0)
                         .animation(.easeIn(duration: particle.fallDuration), value: gravityApplied)
                         .opacity(gravityApplied ? 0 : 1)
+                        // Add this line so they don't fade until the very last 0.5 seconds:
+                        .animation(.easeIn(duration: 0.5).delay(particle.fallDuration - 0.5), value: gravityApplied)
                 }
             }
             .position(x: geo.size.width / 2, y: geo.size.height+100 )
