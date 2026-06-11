@@ -58,13 +58,13 @@
     ]
   },
   {
-    "name": "Guess the Image",
+    "name": "Guess Who?",
     "questions": [
-      { "points": 100, "category": "Guess the Image", "questionText": "What animal is this?", "questionType": "image", "mediaResourceName": "dog_pic", "answerText": "A Golden Retriever", "answerType": "text", "answerMediaResourceName": "", "isAnswered": false },
-      { "points": 200, "category": "Guess the Image", "questionText": "Name this landmark.", "questionType": "image", "mediaResourceName": "eiffel_pic", "answerText": "The Eiffel Tower", "answerType": "text", "answerMediaResourceName": "", "isAnswered": false },
-      { "points": 300, "category": "Guess the Image", "questionText": "What country's flag is this?", "questionType": "image", "mediaResourceName": "flag_pic", "answerText": "Japan", "answerType": "text", "answerMediaResourceName": "", "isAnswered": false },
-      { "points": 400, "category": "Guess the Image", "questionText": "Name this famous painting.", "questionType": "image", "mediaResourceName": "mona_pic", "answerText": "The Mona Lisa", "answerType": "text", "answerMediaResourceName": "", "isAnswered": false },
-      { "points": 500, "category": "Guess the Image", "questionText": "What nebula is shown here?", "questionType": "image", "mediaResourceName": "space_pic", "answerText": "The Orion Nebula", "answerType": "text", "answerMediaResourceName": "", "isAnswered": false }
+      { "points": 100, "category": "Guess Who?", "questionText": "What animal is this?", "questionType": "image", "mediaResourceName": "dog_pic", "answerText": "A Golden Retriever", "answerType": "text", "answerMediaResourceName": "", "isAnswered": false },
+      { "points": 200, "category": "Guess Who?", "questionText": "Name this landmark.", "questionType": "image", "mediaResourceName": "eiffel_pic", "answerText": "The Eiffel Tower", "answerType": "text", "answerMediaResourceName": "", "isAnswered": false },
+      { "points": 300, "category": "Guess Who?", "questionText": "What country's flag is this?", "questionType": "image", "mediaResourceName": "flag_pic", "answerText": "Japan", "answerType": "text", "answerMediaResourceName": "", "isAnswered": false },
+      { "points": 400, "category": "Guess Who?", "questionText": "Name this famous painting.", "questionType": "image", "mediaResourceName": "mona_pic", "answerText": "The Mona Lisa", "answerType": "text", "answerMediaResourceName": "", "isAnswered": false },
+      { "points": 500, "category": "Guess Who?", "questionText": "What nebula is shown here?", "questionType": "image", "mediaResourceName": "space_pic", "answerText": "The Orion Nebula", "answerType": "text", "answerMediaResourceName": "", "isAnswered": false }
     ]
   }
 ]

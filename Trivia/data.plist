@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>General Text</string>
+		<key>questions</key>
+		<array>
+			<dict>
+				<key>points</key>
+				<integer>100</integer>
+				<key>category</key>
+				<string>General Text</string>
+				<key>questionText</key>
+				<string>What is the capital of France?</string>
+				<key>questionType</key>
+				<string>text</string>
+				<key>mediaResourceName</key>
+				<string></string>
+				<key>answerText</key>
+				<string>Paris</string>
+				<key>answerType</key>
+				<string>text</string>
+				<key>answerMediaResourceName</key>
+				<string></string>
+				<key>isAnswered</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>points</key>
+				<integer>200</integer>
+				<key>category</key>
+				<string>General Text</string>
+				<key>questionText</key>
+				<string>What is 5 + 7?</string>
+				<key>questionType</key>
+				<string>text</string>
+				<key>mediaResourceName</key>
+				<string></string>
+				<key>answerText</key>
+				<string>12</string>
+				<key>answerType</key>
+				<string>text</string>
+				<key>answerMediaResourceName</key>
+				<string></string>
+				<key>isAnswered</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>points</key>
+				<integer>300</integer>
+				<key>category</key>
+				<string>General Text</string>
+				<key>questionText</key>
+				<string>Who wrote Hamlet?</string>
+				<key>questionType</key>
+				<string>text</string>
+				<key>mediaResourceName</key>
+				<string></string>
+				<key>answerText</key>
+				<string>William Shakespeare</string>
+				<key>answerType</key>
+				<string>text</string>
+				<key>answerMediaResourceName</key>
+				<string></string>
+				<key>isAnswered</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>points</key>
+				<integer>400</integer>
+				<key>category</key>
+				<string>General Text</string>
+				<key>questionText</key>
+				<string>What is the boiling point of water in C?</string>
+				<key>questionType</key>
+				<string>text</string>
+				<key>mediaResourceName</key>
+				<string></string>
+				<key>answerText</key>
+				<string>100°C</string>
+				<key>answerType</key>
+				<string>text</string>
+				<key>answerMediaResourceName</key>
+				<string></string>
+				<key>isAnswered</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>points</key>
+				<integer>500</integer>
+				<key>category</key>
+				<string>General Text</string>
+				<key>questionText</key>
+				<string>Who is the CEO of Apple?</string>
+				<key>questionType</key>
+				<string>text</string>
+				<key>mediaResourceName</key>
+				<string></string>
+				<key>answerText</key>
+				<string>Tim Cook</string>
+				<key>answerType</key>
+				<string>text</string>
+				<key>answerMediaResourceName</key>
+				<string></string>
+				<key>isAnswered</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Science Text</string>
+		<key>questions</key>
+		<array>
+			<dict>
+				<key>points</key>
+				<integer>100</integer>
+				<key>category</key>
+				<string>Science Text</string>
+				<key>questionText</key>
+				<string>What planet is known as the Red Planet?</string>
+				<key>questionType</key>
+				<string>text</string>
+				<key>mediaResourceName</key>
+				<string></string>
+				<key>answerText</key>
+				<string>Mars</string>
+				<key>answerType</key>
+				<string>text</string>
+				<key>answerMediaResourceName</key>
+				<string></string>
+				<key>isAnswered</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>points</key>
+				<integer>200</integer>
+				<key>category</key>
+				<string>Science Text</string>
+				<key>questionText</key>
+				<string>What is the chemical symbol for Gold?</string>
+				<key>questionType</key>
+				<string>text</string>
+				<key>mediaResourceName</key>
+				<string></string>
+				<key>answerText</key>
+				<string>Au</string>
+				<key>answerType</key>
+				<string>text</string>
+				<key>answerMediaResourceName</key>
+				<string></string>
+				<key>isAnswered</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>points</key>
+				<integer>300</integer>
+				<key>category</key>
+				<string>Science Text</string>
+				<key>questionText</key>
+				<string>What gas do plants breathe in?</string>
+				<key>questionType</key>
+				<string>text</string>
+				<key>mediaResourceName</key>
+				<string></string>
+				<key>answerText</key>
+				<string>Carbon Dioxide</string>
+				<key>answerType</key>
+				<string>text</string>
+				<key>answerMediaResourceName</key>
+				<string></string>
+				<key>isAnswered</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>points</key>
+				<integer>400</integer>
+				<key>category</key>
+				<string>Science Text</string>
+				<key>questionText</key>
+				<string>How many bones are in the human body?</string>
+				<key>questionType</key>
+				<string>text</string>
+				<key>mediaResourceName</key>
+				<string></string>
+				<key>answerText</key>
+				<string>206</string>
+				<key>answerType</key>
+				<string>text</string>
+				<key>answerMediaResourceName</key>
+				<string></string>
+				<key>isAnswered</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>points</key>
+				<integer>500</integer>
+				<key>category</key>
+				<string>Science Text</string>
+				<key>questionText</key>
+				<string>What is the hardest natural substance?</string>
+				<key>questionType</key>
+				<string>text</string>
+				<key>mediaResourceName</key>
+				<string></string>
+				<key>answerText</key>
+				<string>Diamond</string>
+				<key>answerType</key>
+				<string>text</string>
+				<key>answerMediaResourceName</key>
+				<string></string>
+				<key>isAnswered</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Guess the Image</string>
+		<key>questions</key>
+		<array>
+			<dict>
+				<key>points</key>
+				<integer>100</integer>
+				<key>category</key>
+				<string>Guess the Image</string>
+				<key>questionText</key>
+				<string>What animal is this?</string>
+				<key>questionType</key>
+				<string>image</string>
+				<key>mediaResourceName</key>
+				<string>dog_pic</string>
+				<key>answerText</key>
+				<string>A Golden Retriever</string>
+				<key>answerType</key>
+				<string>text</string>
+				<key>answerMediaResourceName</key>
+				<string></string>
+				<key>isAnswered</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>points</key>
+				<integer>200</integer>
+				<key>category</key>
+				<string>Guess the Image</string>
+				<key>questionText</key>
+				<string>Name this landmark.</string>
+				<key>questionType</key>
+				<string>image</string>
+				<key>mediaResourceName</key>
+				<string>eiffel_pic</string>
+				<key>answerText</key>
+				<string>The Eiffel Tower</string>
+				<key>answerType</key>
+				<string>text</string>
+				<key>answerMediaResourceName</key>
+				<string></string>
+				<key>isAnswered</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>points</key>
+				<integer>300</integer>
+				<key>category</key>
+				<string>Guess the Image</string>
+				<key>questionText</key>
+				<string>What country&apos;s flag is this?</string>
+				<key>questionType</key>
+				<string>image</string>
+				<key>mediaResourceName</key>
+				<string>flag_pic</string>
+				<key>answerText</key>
+				<string>Japan</string>
+				<key>answerType</key>
+				<string>text</string>
+				<key>answerMediaResourceName</key>
+				<string></string>
+				<key>isAnswered</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>points</key>
+				<integer>400</integer>
+				<key>category</key>
+				<string>Guess the Image</string>
+				<key>questionText</key>
+				<string>Name this famous painting.</string>
+				<key>questionType</key>
+				<string>image</string>
+				<key>mediaResourceName</key>
+				<string>mona_pic</string>
+				<key>answerText</key>
+				<string>The Mona Lisa</string>
+				<key>answerType</key>
+				<string>text</string>
+				<key>answerMediaResourceName</key>
+				<string></string>
+				<key>isAnswered</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>points</key>
+				<integer>500</integer>
+				<key>category</key>
+				<string>Guess the Image</string>
+				<key>questionText</key>
+				<string>What nebula is shown here?</string>
+				<key>questionType</key>
+				<string>image</string>
+				<key>mediaResourceName</key>
+				<string>space_pic</string>
+				<key>answerText</key>
+				<string>The Orion Nebula</string>
+				<key>answerType</key>
+				<string>text</string>
+				<key>answerMediaResourceName</key>
+				<string></string>
+				<key>isAnswered</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Guess Who?</string>
+		<key>questions</key>
+		<array>
+			<dict>
+				<key>points</key>
+				<integer>100</integer>
+				<key>category</key>
+				<string>Guess Who?</string>
+				<key>questionText</key>
+				<string>What animal is this?</string>
+				<key>questionType</key>
+				<string>image</string>
+				<key>mediaResourceName</key>
+				<string>dog_pic</string>
+				<key>answerText</key>
+				<string>A Golden Retriever</string>
+				<key>answerType</key>
+				<string>text</string>
+				<key>answerMediaResourceName</key>
+				<string></string>
+				<key>isAnswered</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>points</key>
+				<integer>200</integer>
+				<key>category</key>
+				<string>Guess Who?</string>
+				<key>questionText</key>
+				<string>Name this landmark.</string>
+				<key>questionType</key>
+				<string>image</string>
+				<key>mediaResourceName</key>
+				<string>eiffel_pic</string>
+				<key>answerText</key>
+				<string>The Eiffel Tower</string>
+				<key>answerType</key>
+				<string>text</string>
+				<key>answerMediaResourceName</key>
+				<string></string>
+				<key>isAnswered</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>points</key>
+				<integer>300</integer>
+				<key>category</key>
+				<string>Guess Who?</string>
+				<key>questionText</key>
+				<string>What country&apos;s flag is this?</string>
+				<key>questionType</key>
+				<string>image</string>
+				<key>mediaResourceName</key>
+				<string>flag_pic</string>
+				<key>answerText</key>
+				<string>Japan</string>
+				<key>answerType</key>
+				<string>text</string>
+				<key>answerMediaResourceName</key>
+				<string></string>
+				<key>isAnswered</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>points</key>
+				<integer>400</integer>
+				<key>category</key>
+				<string>Guess Who?</string>
+				<key>questionText</key>
+				<string>Name this famous painting.</string>
+				<key>questionType</key>
+				<string>image</string>
+				<key>mediaResourceName</key>
+				<string>mona_pic</string>
+				<key>answerText</key>
+				<string>The Mona Lisa</string>
+				<key>answerType</key>
+				<string>text</string>
+				<key>answerMediaResourceName</key>
+				<string></string>
+				<key>isAnswered</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>points</key>
+				<integer>500</integer>
+				<key>category</key>
+				<string>Guess Who?</string>
+				<key>questionText</key>
+				<string>What nebula is shown here?</string>
+				<key>questionType</key>
+				<string>image</string>
+				<key>mediaResourceName</key>
+				<string>space_pic</string>
+				<key>answerText</key>
+				<string>The Orion Nebula</string>
+				<key>answerType</key>
+				<string>text</string>
+				<key>answerMediaResourceName</key>
+				<string></string>
+				<key>isAnswered</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Guess Who?</string>
+		<key>questions</key>
+		<array>
+			<dict>
+				<key>points</key>
+				<integer>100</integer>
+				<key>category</key>
+				<string>Guess Who?</string>
+				<key>questionText</key>
+				<string>What animal is this?</string>
+				<key>questionType</key>
+				<string>image</string>
+				<key>mediaResourceName</key>
+				<string>dog_pic</string>
+				<key>answerText</key>
+				<string>A Golden Retriever</string>
+				<key>answerType</key>
+				<string>text</string>
+				<key>answerMediaResourceName</key>
+				<string></string>
+				<key>isAnswered</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>points</key>
+				<integer>200</integer>
+				<key>category</key>
+				<string>Guess Who?</string>
+				<key>questionText</key>
+				<string>Name this landmark.</string>
+				<key>questionType</key>
+				<string>image</string>
+				<key>mediaResourceName</key>
+				<string>eiffel_pic</string>
+				<key>answerText</key>
+				<string>The Eiffel Tower</string>
+				<key>answerType</key>
+				<string>text</string>
+				<key>answerMediaResourceName</key>
+				<string></string>
+				<key>isAnswered</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>points</key>
+				<integer>300</integer>
+				<key>category</key>
+				<string>Guess Who?</string>
+				<key>questionText</key>
+				<string>What country&apos;s flag is this?</string>
+				<key>questionType</key>
+				<string>image</string>
+				<key>mediaResourceName</key>
+				<string>flag_pic</string>
+				<key>answerText</key>
+				<string>Japan</string>
+				<key>answerType</key>
+				<string>text</string>
+				<key>answerMediaResourceName</key>
+				<string></string>
+				<key>isAnswered</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>points</key>
+				<integer>400</integer>
+				<key>category</key>
+				<string>Guess Who?</string>
+				<key>questionText</key>
+				<string>Name this famous painting.</string>
+				<key>questionType</key>
+				<string>image</string>
+				<key>mediaResourceName</key>
+				<string>mona_pic</string>
+				<key>answerText</key>
+				<string>The Mona Lisa</string>
+				<key>answerType</key>
+				<string>text</string>
+				<key>answerMediaResourceName</key>
+				<string></string>
+				<key>isAnswered</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>points</key>
+				<integer>500</integer>
+				<key>category</key>
+				<string>Guess Who?</string>
+				<key>questionText</key>
+				<string>What nebula is shown here?</string>
+				<key>questionType</key>
+				<string>image</string>
+				<key>mediaResourceName</key>
+				<string>space_pic</string>
+				<key>answerText</key>
+				<string>The Orion Nebula</string>
+				<key>answerType</key>
+				<string>text</string>
+				<key>answerMediaResourceName</key>
+				<string></string>
+				<key>isAnswered</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Guess Who?</string>
+		<key>questions</key>
+		<array>
+			<dict>
+				<key>points</key>
+				<integer>100</integer>
+				<key>category</key>
+				<string>Guess Who?</string>
+				<key>questionText</key>
+				<string>What animal is this?</string>
+				<key>questionType</key>
+				<string>image</string>
+				<key>mediaResourceName</key>
+				<string>dog_pic</string>
+				<key>answerText</key>
+				<string>A Golden Retriever</string>
+				<key>answerType</key>
+				<string>text</string>
+				<key>answerMediaResourceName</key>
+				<string></string>
+				<key>isAnswered</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>points</key>
+				<integer>200</integer>
+				<key>category</key>
+				<string>Guess Who?</string>
+				<key>questionText</key>
+				<string>Name this landmark.</string>
+				<key>questionType</key>
+				<string>image</string>
+				<key>mediaResourceName</key>
+				<string>eiffel_pic</string>
+				<key>answerText</key>
+				<string>The Eiffel Tower</string>
+				<key>answerType</key>
+				<string>text</string>
+				<key>answerMediaResourceName</key>
+				<string></string>
+				<key>isAnswered</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>points</key>
+				<integer>300</integer>
+				<key>category</key>
+				<string>Guess Who?</string>
+				<key>questionText</key>
+				<string>What country&apos;s flag is this?</string>
+				<key>questionType</key>
+				<string>image</string>
+				<key>mediaResourceName</key>
+				<string>flag_pic</string>
+				<key>answerText</key>
+				<string>Japan</string>
+				<key>answerType</key>
+				<string>text</string>
+				<key>answerMediaResourceName</key>
+				<string></string>
+				<key>isAnswered</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>points</key>
+				<integer>400</integer>
+				<key>category</key>
+				<string>Guess Who?</string>
+				<key>questionText</key>
+				<string>Name this famous painting.</string>
+				<key>questionType</key>
+				<string>image</string>
+				<key>mediaResourceName</key>
+				<string>mona_pic</string>
+				<key>answerText</key>
+				<string>The Mona Lisa</string>
+				<key>answerType</key>
+				<string>text</string>
+				<key>answerMediaResourceName</key>
+				<string></string>
+				<key>isAnswered</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>points</key>
+				<integer>500</integer>
+				<key>category</key>
+				<string>Guess Who?</string>
+				<key>questionText</key>
+				<string>What nebula is shown here?</string>
+				<key>questionType</key>
+				<string>image</string>
+				<key>mediaResourceName</key>
+				<string>space_pic</string>
+				<key>answerText</key>
+				<string>The Orion Nebula</string>
+				<key>answerType</key>
+				<string>text</string>
+				<key>answerMediaResourceName</key>
+				<string></string>
+				<key>isAnswered</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

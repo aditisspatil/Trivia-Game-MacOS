@@ -138,27 +138,23 @@ class TriviaGameEngine: ObservableObject {
     }
     
     func loadDefaultBoard() {
-        // FIX 1: Ask directly for "board_1". Xcode flattens yellow folders in the bundle.
-        guard let url = Bundle.main.url(forResource: "data", withExtension: "json") else {
-            print("Error: Could not find 'board_1.json' in the app bundle.")
+        guard let url = Bundle.main.url(forResource: "data", withExtension: "plist") else {
+            print("Error: Could not find 'data.plist' in the app bundle.")
             print("Make sure you dragged it into Xcode and checked 'Target Membership'.")
             return
         }
-        
+
         do {
             let data = try Data(contentsOf: url)
-            let decodedCategories = try JSONDecoder().decode([Category].self, from: data)
-            
+            let decodedCategories = try PropertyListDecoder().decode([Category].self, from: data)
+
             self.categories = decodedCategories
             self.team1Score = 0
             self.team2Score = 0
-            print("Successfully loaded the fresh trivia board from board_1.json!")
-            
-            // Save this fresh state immediately
+            print("Successfully loaded the trivia board from data.plist!")
             saveGame()
-            
         } catch {
-            print("Failed to decode board_1.json. Check for missing commas or quotes in your JSON file: \(error)")
+            print("Failed to decode data.plist. Check for format or structure issues: \(error)")
         }
     }
     
