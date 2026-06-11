@@ -560,6 +560,33 @@ Hufflepuff – Helga Hufflepuff</string>
 				<string>hints</string>
 				<key>hints</key>
 				<array>
+					<string>Jale hue baal bech kar bolta hoon, &quot;i smell good.&quot;</string>
+					<string>I love my x.</string>
+					<string>I wanna shoot for stars.</string>
+					<string>i forget my wifi passowrd, so i named my kid after it</string>
+				</array>
+				<key>mediaResourceName</key>
+				<string></string>
+				<key>answerText</key>
+				<string>Elon Musk</string>
+				<key>answerType</key>
+				<string>image</string>
+				<key>answerMediaResourceName</key>
+				<string>musk</string>
+				<key>isAnswered</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>points</key>
+				<integer>200</integer>
+				<key>category</key>
+				<string>Guess me if you can?</string>
+				<key>questionText</key>
+				<string>Who am I?</string>
+				<key>questionType</key>
+				<string>hints</string>
+				<key>hints</key>
+				<array>
 					<string>Pandit hoke bhi galiya deta hu.</string>
 					<string>People think I&apos;m crazy, I think everything is crazy.</string>
 					<string>In India, I got bullied for being gora.</string>
@@ -573,33 +600,6 @@ Hufflepuff – Helga Hufflepuff</string>
 				<string>image</string>
 				<key>answerMediaResourceName</key>
 				<string>samay</string>
-				<key>isAnswered</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>points</key>
-				<integer>200</integer>
-				<key>category</key>
-				<string>Guess me if you can?</string>
-				<key>questionText</key>
-				<string>Can you guess this person?</string>
-				<key>questionType</key>
-				<string>hints</string>
-				<key>hints</key>
-				<array>
-					<string>I preached to live fully, because tomorrow might not exist.</string>
-					<string>Shuru mein I am Gujarati</string>
-					<string>My hands are always wide open waiting for a hug.</string>
-					<string>Main ruk-ruk k hakalata hoon.</string>
-				</array>
-				<key>mediaResourceName</key>
-				<string></string>
-				<key>answerText</key>
-				<string>Shah Rukh Khan</string>
-				<key>answerType</key>
-				<string>image</string>
-				<key>answerMediaResourceName</key>
-				<string>shah</string>
 				<key>isAnswered</key>
 				<false/>
 			</dict>
@@ -627,6 +627,60 @@ Hufflepuff – Helga Hufflepuff</string>
 				<string>image</string>
 				<key>answerMediaResourceName</key>
 				<string>trump</string>
+				<key>isAnswered</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>points</key>
+				<integer>400</integer>
+				<key>category</key>
+				<string>Guess me if you can?</string>
+				<key>questionText</key>
+				<string>Can you guess this person?</string>
+				<key>questionType</key>
+				<string>hints</string>
+				<key>hints</key>
+				<array>
+					<string>I preached to live fully, because tomorrow might not exist.</string>
+					<string>Shuru mein I am Gujarati</string>
+					<string>My hands are always wide open waiting for a hug.</string>
+					<string>Main ruk-ruk k hakalata hoon.</string>
+				</array>
+				<key>mediaResourceName</key>
+				<string></string>
+				<key>answerText</key>
+				<string>Shah Rukh Khan</string>
+				<key>answerType</key>
+				<string>image</string>
+				<key>answerMediaResourceName</key>
+				<string>shah</string>
+				<key>isAnswered</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>points</key>
+				<integer>500</integer>
+				<key>category</key>
+				<string>Guess me if you can?</string>
+				<key>questionText</key>
+				<string>Who am I?</string>
+				<key>questionType</key>
+				<string>hints</string>
+				<key>hints</key>
+				<array>
+					<string>People don&apos;t know my name, but everyone knows me.</string>
+					<string>I love sea salt in my food.</string>
+					<string>I love taking walks in my pajama.</string>
+					<string>Indians love keeping my photo in their house.</string>
+				</array>
+				<key>mediaResourceName</key>
+				<string></string>
+				<key>answerText</key>
+				<string>Mahatma Gandhi</string>
+				<key>answerType</key>
+				<string>image</string>
+				<key>answerMediaResourceName</key>
+				<string>gandhi</string>
 				<key>isAnswered</key>
 				<false/>
 			</dict>
