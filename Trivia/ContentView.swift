@@ -118,6 +118,8 @@ class TriviaGameEngine: ObservableObject {
         if !loadGame() {
             loadDefaultBoard() // If no save exists, load the fresh JSON
         }
+        loadDefaultBoard() // If no save exists, load the fresh JSON
+
     }
     
     func loadGame() -> Bool {
@@ -135,6 +137,8 @@ class TriviaGameEngine: ObservableObject {
             print("Failed to load saved game: \(error.localizedDescription)")
             return false
         }
+        
+        // REMOVE ++++++++++++++
     }
     
     func loadDefaultBoard() {
