@@ -25,4 +25,8 @@ class AudioManager: ObservableObject {
             print("Audio playback failed: \(error.localizedDescription)")
         }
     }
+    
+    func stopSound() {
+            player?.stop()
+        }
 }

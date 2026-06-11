@@ -439,22 +439,22 @@ Hufflepuff – Helga Hufflepuff</string>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Guess Who?</string>
+		<string>Guess The Tune</string>
 		<key>questions</key>
 		<array>
 			<dict>
 				<key>points</key>
 				<integer>100</integer>
 				<key>category</key>
-				<string>Guess Who?</string>
+				<string>Guess The Tune</string>
 				<key>questionText</key>
-				<string>What animal is this?</string>
+				<string>Name the song</string>
 				<key>questionType</key>
-				<string>image</string>
+				<string>audio</string>
 				<key>mediaResourceName</key>
-				<string>dog_pic</string>
+				<string>bairan</string>
 				<key>answerText</key>
-				<string>A Golden Retriever</string>
+				<string>Bairan</string>
 				<key>answerType</key>
 				<string>text</string>
 				<key>answerMediaResourceName</key>

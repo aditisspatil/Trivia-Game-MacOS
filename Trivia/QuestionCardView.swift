@@ -16,6 +16,8 @@ struct QuestionPopupView: View {
     @State private var isAnswerRevealed = false
     @State private var revealedHintsCount = 0
     
+    @StateObject private var audioManager = AudioManager()
+    
     let popupBackground = Color(nsColor: NSColor(red: 0.110, green: 0.365, blue: 0.388, alpha: 1.0))
     let team1Mint = Color(nsColor: NSColor(red: 0.580, green: 0.824, blue: 0.741, alpha: 1.0))
     let team2Teal = Color(nsColor: NSColor(red: 0.039, green: 0.576, blue: 0.588, alpha: 1.0))
@@ -148,13 +150,47 @@ struct QuestionPopupView: View {
                     }
             
         case .audio:
-            VStack(spacing: 20) {
-                HStack(spacing: 15) {
-                    Image(systemName: "speaker.wave.3.fill").font(.system(size: 40))
-                    Text("Audio Clue Playing...").font(.largeTitle).bold()
-                }.foregroundColor(team1Mint)
-                Text(text).font(.title2).foregroundColor(.white)
-            }
+                    VStack(spacing: 20) {
+                        HStack(spacing: 15) {
+                            Image(systemName: "speaker.wave.3.fill")
+                                .font(.system(size: 40))
+                            Text("Audio Clue Playing...")
+                                .font(.largeTitle).bold()
+                        }
+                        .foregroundColor(team1Mint)
+                        
+                        Text(text)
+                            .font(.title2)
+                            .foregroundColor(.white)
+                        
+                        // NEW: Replay Button
+                        Button(action: {
+                            if !resourceName.isEmpty {
+                                // Triggers the audio manager to start the track over
+                                audioManager.playSound(soundName: resourceName, fileExtension: "m4a")
+                            }
+                        }) {
+                            HStack(spacing: 8) {
+                                Image(systemName: "arrow.clockwise.circle.fill")
+                                Text("Play Again")
+                            }
+                            .font(.title3).bold()
+                            .padding(.horizontal, 20)
+                            .padding(.vertical, 12)
+                            .background(Capsule().fill(team1Mint.opacity(0.2)))
+                            .foregroundColor(team1Mint)
+                        }
+                        .buttonStyle(.plain)
+                        .padding(.top, 10)
+                    }
+                    .onAppear {
+                        if !resourceName.isEmpty {
+                            audioManager.playSound(soundName: resourceName, fileExtension: "m4a")
+                        }
+                    }
+                    .onDisappear {
+                        audioManager.stopSound()
+                    }
             
         case .video:
             VStack(spacing: 20) {
