@@ -94,7 +94,6 @@ struct GameState: Codable {
     let team2Name: String
     let team2Score: Int
 }
-
 // MARK: - View Model
 class TriviaGameEngine: ObservableObject {
     @Published var categories: [Category] = []
@@ -117,7 +116,7 @@ class TriviaGameEngine: ObservableObject {
     
     init() {
         if !loadGame() {
-            loadDefaultBoard()
+            loadDefaultBoard() // If no save exists, load the fresh JSON
         }
     }
     
@@ -139,76 +138,57 @@ class TriviaGameEngine: ObservableObject {
     }
     
     func loadDefaultBoard() {
-        if let url = Bundle.main.url(forResource: "default_board", withExtension: "json") {
-            do {
-                let data = try Data(contentsOf: url)
-                let decodedCategories = try JSONDecoder().decode([Category].self, from: data)
-                self.categories = decodedCategories
-                self.team1Score = 0
-                self.team2Score = 0
-                saveGame()
-                return
-            } catch {
-                print("Failed to decode default_board.json: \(error.localizedDescription)")
-            }
+        // FIX 1: Ask directly for "board_1". Xcode flattens yellow folders in the bundle.
+        guard let url = Bundle.main.url(forResource: "data", withExtension: "json") else {
+            print("Error: Could not find 'board_1.json' in the app bundle.")
+            print("Make sure you dragged it into Xcode and checked 'Target Membership'.")
+            return
         }
-        setupMockData()
-    }
-    
-    private func setupMockData() {
-        let values = [100, 200, 300, 400, 500]
-        let names = ["Apple History", "Soundbites", "Space & Sci-Fi", "Geography", "Pop Culture"]
         
-        self.categories = names.map { catName in
-            let questions = values.map { points -> TriviaQuestion in
-                
-                let type: QuestionType = points == 300 ? .image : (points == 400 ? .audio : (points == 500 ? .hints : .text))
-                let hints = points == 500 ? ["Hint 1: Founded in a garage.", "Hint 2: Named after a fruit.", "Hint 3: Creators of the Macintosh.", "Hint 4: Think Different.", "Hint 5: iPhone maker."] : nil
-                
-                return TriviaQuestion(
-                    points: points,
-                    category: catName,
-                    questionText: points == 500 ? "Can you guess the company from these hints?" : "This is a \(points) point question about \(catName).",
-                    questionType: type,
-                    mediaResourceName: "",
-                    hints: hints,
-                    answerText: "The Answer is Apple Inc.",
-                    answerType: points == 300 ? .image : .text,
-                    answerMediaResourceName: ""
-                )
-            }
-            return Category(name: catName, questions: questions)
+        do {
+            let data = try Data(contentsOf: url)
+            let decodedCategories = try JSONDecoder().decode([Category].self, from: data)
+            
+            self.categories = decodedCategories
+            self.team1Score = 0
+            self.team2Score = 0
+            print("Successfully loaded the fresh trivia board from board_1.json!")
+            
+            // Save this fresh state immediately
+            saveGame()
+            
+        } catch {
+            print("Failed to decode board_1.json. Check for missing commas or quotes in your JSON file: \(error)")
         }
     }
     
     func markAsAnswered(_ question: TriviaQuestion, awardedToTeam: Int?) {
-            if let catIndex = categories.firstIndex(where: { $0.name == question.category }),
-               let qIndex = categories[catIndex].questions.firstIndex(where: { $0.id == question.id }) {
-                
-                categories[catIndex].questions[qIndex].isAnswered = true
-                
-                if awardedToTeam == 1 {
-                    team1Score += question.points
-                } else if awardedToTeam == 2 {
-                    team2Score += question.points
-                }
-                
-                // 🎉 RANDOM SURPRISE ANIMATION LOGIC 🎉
-                if awardedToTeam != nil { // Only trigger if someone actually won the points
-                    // Flip a coin: 1 or 2
-                    let randomSurprise = Int.random(in: 1...2)
-                    
-                    if randomSurprise == 1 {
-                        confettiTrigger += 1
-                    } else {
-                        balloonTrigger += 1
-                    }
-                }
-                
-                saveGame()
+        if let catIndex = categories.firstIndex(where: { $0.name == question.category }),
+           let qIndex = categories[catIndex].questions.firstIndex(where: { $0.id == question.id }) {
+            
+            categories[catIndex].questions[qIndex].isAnswered = true
+            
+            if awardedToTeam == 1 {
+                team1Score += question.points
+            } else if awardedToTeam == 2 {
+                team2Score += question.points
             }
-            selectedQuestion = nil
+            
+            // 🎉 RANDOM SURPRISE ANIMATION LOGIC 🎉
+            if awardedToTeam != nil {
+                let randomSurprise = Int.random(in: 1...2)
+                
+                if randomSurprise == 1 {
+                    confettiTrigger += 1
+                } else {
+                    balloonTrigger += 1
+                }
+            }
+            
+            saveGame()
         }
+        selectedQuestion = nil
+    }
     
     func saveGame() {
         let currentState = GameState(categories: categories, team1Name: team1Name, team1Score: team1Score, team2Name: team2Name, team2Score: team2Score)
@@ -220,15 +200,22 @@ class TriviaGameEngine: ObservableObject {
         }
     }
     
-    func importGame() { /* existing logic omitted for brevity, keeps the same panel logic */ }
-    func importQuestionsFile() { /* existing logic omitted for brevity */ }
-    
     func resetGame() {
+        // FIX 2: Explicitly delete the corrupted or finished save file first
+        if FileManager.default.fileExists(atPath: saveFileURL.path) {
+            try? FileManager.default.removeItem(at: saveFileURL)
+        }
+        
+        // Reload the fresh JSON board
         loadDefaultBoard()
+        
+        // Reset names and scores
         team1Name = "Team 1"
         team1Score = 0
         team2Name = "Team 2"
         team2Score = 0
+        
+        // Save the brand new state
         saveGame()
     }
 }
@@ -326,7 +313,27 @@ struct GameSettingsView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
             Text("Game Settings").font(.headline)
-            // Settings logic kept exactly identical to yours...
+            
+            VStack(alignment: .leading, spacing: 12) {
+                Text("Edit Team Scores").font(.caption).bold().foregroundColor(.secondary)
+                HStack {
+                    Text("\(game.team1Name):")
+                    TextField("Score", value: $game.team1Score, formatter: NumberFormatter())
+                        .frame(width: 60)
+                        .textFieldStyle(.roundedBorder)
+                    Stepper("", value: $game.team1Score)
+                        .labelsHidden()
+                }
+                HStack {
+                    Text("\(game.team2Name):")
+                    TextField("Score", value: $game.team2Score, formatter: NumberFormatter())
+                        .frame(width: 60)
+                        .textFieldStyle(.roundedBorder)
+                    Stepper("", value: $game.team2Score)
+                        .labelsHidden()
+                }
+            }
+            
             Divider()
             VStack(alignment: .leading, spacing: 12) {
                 Text("Admin Settings").font(.caption).bold().foregroundColor(.secondary)
@@ -343,3 +350,4 @@ struct GameSettingsView: View {
         .frame(width: 320)
     }
 }
+
