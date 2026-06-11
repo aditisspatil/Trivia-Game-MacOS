@@ -238,7 +238,7 @@ Hufflepuff – Helga Hufflepuff</string>
 				<key>questionType</key>
 				<string>image</string>
 				<key>mediaResourceName</key>
-				<string>dog_pic</string>
+				<string></string>
 				<key>answerText</key>
 				<string>A Golden Retriever</string>
 				<key>answerType</key>
@@ -546,106 +546,33 @@ Hufflepuff – Helga Hufflepuff</string>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Guess Who?</string>
+		<string>Guess me if you can?</string>
 		<key>questions</key>
 		<array>
 			<dict>
 				<key>points</key>
 				<integer>100</integer>
 				<key>category</key>
-				<string>Guess Who?</string>
+				<string>Guess me if you can?</string>
 				<key>questionText</key>
-				<string>What animal is this?</string>
+				<string>Can you guess this person?</string>
 				<key>questionType</key>
-				<string>image</string>
+				<string>hints</string>
+				<key>hints</key>
+				<array>
+					<string>I preached to live fully, because tomorrow might not exist.</string>
+					<string>Shuru mein I am Gujarati</string>
+					<string>My hands are always wide open waiting for a hug.</string>
+					<string>Main ruk-ruk k hakalata hoon.</string>
+				</array>
 				<key>mediaResourceName</key>
-				<string>dog_pic</string>
-				<key>answerText</key>
-				<string>A Golden Retriever</string>
-				<key>answerType</key>
-				<string>text</string>
-				<key>answerMediaResourceName</key>
 				<string></string>
-				<key>isAnswered</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>points</key>
-				<integer>200</integer>
-				<key>category</key>
-				<string>Guess Who?</string>
-				<key>questionText</key>
-				<string>Name this landmark.</string>
-				<key>questionType</key>
+				<key>answerText</key>
+				<string>Shah Rukh Khan</string>
+				<key>answerType</key>
 				<string>image</string>
-				<key>mediaResourceName</key>
-				<string>eiffel_pic</string>
-				<key>answerText</key>
-				<string>The Eiffel Tower</string>
-				<key>answerType</key>
-				<string>text</string>
 				<key>answerMediaResourceName</key>
-				<string></string>
-				<key>isAnswered</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>points</key>
-				<integer>300</integer>
-				<key>category</key>
-				<string>Guess Who?</string>
-				<key>questionText</key>
-				<string>What country&apos;s flag is this?</string>
-				<key>questionType</key>
-				<string>image</string>
-				<key>mediaResourceName</key>
-				<string>flag_pic</string>
-				<key>answerText</key>
-				<string>Japan</string>
-				<key>answerType</key>
-				<string>text</string>
-				<key>answerMediaResourceName</key>
-				<string></string>
-				<key>isAnswered</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>points</key>
-				<integer>400</integer>
-				<key>category</key>
-				<string>Guess Who?</string>
-				<key>questionText</key>
-				<string>Name this famous painting.</string>
-				<key>questionType</key>
-				<string>image</string>
-				<key>mediaResourceName</key>
-				<string>mona_pic</string>
-				<key>answerText</key>
-				<string>The Mona Lisa</string>
-				<key>answerType</key>
-				<string>text</string>
-				<key>answerMediaResourceName</key>
-				<string></string>
-				<key>isAnswered</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>points</key>
-				<integer>500</integer>
-				<key>category</key>
-				<string>Guess Who?</string>
-				<key>questionText</key>
-				<string>What nebula is shown here?</string>
-				<key>questionType</key>
-				<string>image</string>
-				<key>mediaResourceName</key>
-				<string>space_pic</string>
-				<key>answerText</key>
-				<string>The Orion Nebula</string>
-				<key>answerType</key>
-				<string>text</string>
-				<key>answerMediaResourceName</key>
-				<string></string>
+				<string>shah</string>
 				<key>isAnswered</key>
 				<false/>
 			</dict>
