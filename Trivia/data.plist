@@ -555,6 +555,33 @@ Hufflepuff – Helga Hufflepuff</string>
 				<key>category</key>
 				<string>Guess me if you can?</string>
 				<key>questionText</key>
+				<string>Who am I?</string>
+				<key>questionType</key>
+				<string>hints</string>
+				<key>hints</key>
+				<array>
+					<string>Pandit hoke bhi galiya deta hu.</string>
+					<string>People think I&apos;m crazy, I think everything is crazy.</string>
+					<string>In India, I got bullied for being gora.</string>
+					<string>I am still alive!</string>
+				</array>
+				<key>mediaResourceName</key>
+				<string></string>
+				<key>answerText</key>
+				<string>Samay Raina</string>
+				<key>answerType</key>
+				<string>image</string>
+				<key>answerMediaResourceName</key>
+				<string>samay</string>
+				<key>isAnswered</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>points</key>
+				<integer>200</integer>
+				<key>category</key>
+				<string>Guess me if you can?</string>
+				<key>questionText</key>
 				<string>Can you guess this person?</string>
 				<key>questionType</key>
 				<string>hints</string>
@@ -573,6 +600,33 @@ Hufflepuff – Helga Hufflepuff</string>
 				<string>image</string>
 				<key>answerMediaResourceName</key>
 				<string>shah</string>
+				<key>isAnswered</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>points</key>
+				<integer>300</integer>
+				<key>category</key>
+				<string>Guess me if you can?</string>
+				<key>questionText</key>
+				<string>Who am I?</string>
+				<key>questionType</key>
+				<string>hints</string>
+				<key>hints</key>
+				<array>
+					<string>My Favourite color is red</string>
+					<string>Jo mai bolta hu wo mai shayad karta hu, par jo mai nahi bolta, wo mai definitely karta hu.</string>
+					<string>Atithi is NOT devo bhava</string>
+					<string>People meme me with a Disney character.</string>
+				</array>
+				<key>mediaResourceName</key>
+				<string></string>
+				<key>answerText</key>
+				<string>Donald Trump</string>
+				<key>answerType</key>
+				<string>image</string>
+				<key>answerMediaResourceName</key>
+				<string>trump</string>
 				<key>isAnswered</key>
 				<false/>
 			</dict>
