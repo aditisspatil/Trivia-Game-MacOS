@@ -118,22 +118,22 @@ Hufflepuff – Helga Hufflepuff</string>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Science Text</string>
+		<string>Fact-ferret</string>
 		<key>questions</key>
 		<array>
 			<dict>
 				<key>points</key>
 				<integer>100</integer>
 				<key>category</key>
-				<string>Science Text</string>
+				<string>Fact-ferret</string>
 				<key>questionText</key>
-				<string>What planet is known as the Red Planet?</string>
+				<string>What is the hardest and strongest substance in the human body?</string>
 				<key>questionType</key>
 				<string>text</string>
 				<key>mediaResourceName</key>
 				<string></string>
 				<key>answerText</key>
-				<string>Mars</string>
+				<string>Tooth Enamel</string>
 				<key>answerType</key>
 				<string>text</string>
 				<key>answerMediaResourceName</key>
@@ -145,15 +145,15 @@ Hufflepuff – Helga Hufflepuff</string>
 				<key>points</key>
 				<integer>200</integer>
 				<key>category</key>
-				<string>Science Text</string>
+				<string>Fact-ferret</string>
 				<key>questionText</key>
-				<string>What is the chemical symbol for Gold?</string>
+				<string>Blood vessels supply oxygen to almost every corner of our bodies. What is the only part of the human body that contains absolutely no blood supply and takes its oxygen directly from the air?</string>
 				<key>questionType</key>
 				<string>text</string>
 				<key>mediaResourceName</key>
 				<string></string>
 				<key>answerText</key>
-				<string>Au</string>
+				<string>Cornea of Eye</string>
 				<key>answerType</key>
 				<string>text</string>
 				<key>answerMediaResourceName</key>
@@ -165,19 +165,19 @@ Hufflepuff – Helga Hufflepuff</string>
 				<key>points</key>
 				<integer>300</integer>
 				<key>category</key>
-				<string>Science Text</string>
+				<string>Fact-ferret</string>
 				<key>questionText</key>
-				<string>What gas do plants breathe in?</string>
+				<string>What is the hottest planet in our solar system?</string>
 				<key>questionType</key>
 				<string>text</string>
 				<key>mediaResourceName</key>
 				<string></string>
 				<key>answerText</key>
-				<string>Carbon Dioxide</string>
+				<string>Venus</string>
 				<key>answerType</key>
-				<string>text</string>
+				<string>image</string>
 				<key>answerMediaResourceName</key>
-				<string></string>
+				<string>venus</string>
 				<key>isAnswered</key>
 				<false/>
 			</dict>
@@ -185,19 +185,19 @@ Hufflepuff – Helga Hufflepuff</string>
 				<key>points</key>
 				<integer>400</integer>
 				<key>category</key>
-				<string>Science Text</string>
+				<string>Fact-ferret</string>
 				<key>questionText</key>
-				<string>How many bones are in the human body?</string>
+				<string>What is the only country in the world whose national flag does not have four sides?</string>
 				<key>questionType</key>
 				<string>text</string>
 				<key>mediaResourceName</key>
 				<string></string>
 				<key>answerText</key>
-				<string>206</string>
+				<string>Nepal</string>
 				<key>answerType</key>
-				<string>text</string>
+				<string>image</string>
 				<key>answerMediaResourceName</key>
-				<string></string>
+				<string>nepal</string>
 				<key>isAnswered</key>
 				<false/>
 			</dict>
@@ -205,15 +205,15 @@ Hufflepuff – Helga Hufflepuff</string>
 				<key>points</key>
 				<integer>500</integer>
 				<key>category</key>
-				<string>Science Text</string>
+				<string>Fact-ferret</string>
 				<key>questionText</key>
-				<string>What is the hardest natural substance?</string>
+				<string>What is the only element that stays liquid and refuses to freeze at Absolute Zero?</string>
 				<key>questionType</key>
 				<string>text</string>
 				<key>mediaResourceName</key>
 				<string></string>
 				<key>answerText</key>
-				<string>Diamond</string>
+				<string>Helium</string>
 				<key>answerType</key>
 				<string>text</string>
 				<key>answerMediaResourceName</key>
@@ -225,26 +225,27 @@ Hufflepuff – Helga Hufflepuff</string>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Guess the Image</string>
+		<string>Dialogue Baazi</string>
 		<key>questions</key>
 		<array>
 			<dict>
 				<key>points</key>
 				<integer>100</integer>
 				<key>category</key>
-				<string>Guess the Image</string>
+				<string>Dialogue Baazi</string>
 				<key>questionText</key>
-				<string>What animal is this?</string>
+				<string>&quot;Jitna bhi try karo bunny, life mein kuch na kuch toh chootega hi. __________________________________.”</string>
 				<key>questionType</key>
 				<string>image</string>
 				<key>mediaResourceName</key>
-				<string></string>
+				<string>dip</string>
 				<key>answerText</key>
-				<string>A Golden Retriever</string>
+				<string>&quot;Jitna bhi try karo bunny, life mein kuch na kuch toh chootega hi. Toh jahan hain, vahin kaa mazaa lete hain.&quot;
+- Yeh Jawaani Hai Deewani </string>
 				<key>answerType</key>
-				<string>text</string>
+				<string>image</string>
 				<key>answerMediaResourceName</key>
-				<string></string>
+				<string>dip</string>
 				<key>isAnswered</key>
 				<false/>
 			</dict>
@@ -252,19 +253,20 @@ Hufflepuff – Helga Hufflepuff</string>
 				<key>points</key>
 				<integer>200</integer>
 				<key>category</key>
-				<string>Guess the Image</string>
+				<string>Dialogue Baazi</string>
 				<key>questionText</key>
-				<string>Name this landmark.</string>
+				<string>&quot;Itni shiddat se maine tumhe paane ki koshish ki hai... _________________________________________. Kehte hain agar kisi cheez ko dil se chaho, toh puri kainaat usse tumse milane ki koshish mein lag jaati hai.&quot;</string>
 				<key>questionType</key>
 				<string>image</string>
 				<key>mediaResourceName</key>
-				<string>eiffel_pic</string>
+				<string>sha</string>
 				<key>answerText</key>
-				<string>The Eiffel Tower</string>
+				<string>&quot;Itni shiddat se maine tumhe paane ki koshish ki hai... ki har zarre ne mujhe tumse milane ki saazish ki hai. Kehte hain agar kisi cheez ko dil se chaho, toh puri kainaat usse tumse milane ki koshish mein lag jaati hai.&quot;
+- Om Shanti Om</string>
 				<key>answerType</key>
-				<string>text</string>
+				<string>image</string>
 				<key>answerMediaResourceName</key>
-				<string></string>
+				<string>sha</string>
 				<key>isAnswered</key>
 				<false/>
 			</dict>
@@ -272,19 +274,20 @@ Hufflepuff – Helga Hufflepuff</string>
 				<key>points</key>
 				<integer>300</integer>
 				<key>category</key>
-				<string>Guess the Image</string>
+				<string>Dialogue Baazi</string>
 				<key>questionText</key>
-				<string>What country&apos;s flag is this?</string>
+				<string>&quot;Aloo lelo, kanda lelo... ____________________________________________”</string>
 				<key>questionType</key>
 				<string>image</string>
 				<key>mediaResourceName</key>
-				<string>flag_pic</string>
+				<string>aloo</string>
 				<key>answerText</key>
-				<string>Japan</string>
+				<string>&quot;Aloo lelo, kanda lelo... subah se na ek aloo bika hai, na bika hai aadha kanda!&quot;
+- Welcome</string>
 				<key>answerType</key>
-				<string>text</string>
+				<string>image</string>
 				<key>answerMediaResourceName</key>
-				<string></string>
+				<string>aloo</string>
 				<key>isAnswered</key>
 				<false/>
 			</dict>
@@ -292,19 +295,20 @@ Hufflepuff – Helga Hufflepuff</string>
 				<key>points</key>
 				<integer>400</integer>
 				<key>category</key>
-				<string>Guess the Image</string>
+				<string>Dialogue Baazi</string>
 				<key>questionText</key>
-				<string>Name this famous painting.</string>
+				<string>“__________________. Kya pata, kal ho naa ho.&quot;</string>
 				<key>questionType</key>
 				<string>image</string>
 				<key>mediaResourceName</key>
-				<string>mona_pic</string>
+				<string>kal</string>
 				<key>answerText</key>
-				<string>The Mona Lisa</string>
+				<string>“Hasso, jiyo, muskurao. Kya pata, kal ho naa ho.&quot;
+- Kal Ho Naa Ho </string>
 				<key>answerType</key>
-				<string>text</string>
+				<string>image</string>
 				<key>answerMediaResourceName</key>
-				<string></string>
+				<string>kal</string>
 				<key>isAnswered</key>
 				<false/>
 			</dict>
@@ -312,19 +316,19 @@ Hufflepuff – Helga Hufflepuff</string>
 				<key>points</key>
 				<integer>500</integer>
 				<key>category</key>
-				<string>Guess the Image</string>
+				<string>Dialogue Baazi</string>
 				<key>questionText</key>
-				<string>What nebula is shown here?</string>
+				<string>“Utha le re baba… utha le!.... __________________________”</string>
 				<key>questionType</key>
 				<string>image</string>
 				<key>mediaResourceName</key>
-				<string>space_pic</string>
+				<string>babu</string>
 				<key>answerText</key>
-				<string>The Orion Nebula</string>
+				<string>“Utha le re baba… utha le!....  Mere ko nahi, in dono ko utha le.”</string>
 				<key>answerType</key>
-				<string>text</string>
+				<string>image</string>
 				<key>answerMediaResourceName</key>
-				<string></string>
+				<string>babu</string>
 				<key>isAnswered</key>
 				<false/>
 			</dict>
@@ -332,26 +336,26 @@ Hufflepuff – Helga Hufflepuff</string>
 	</dict>
 	<dict>
 		<key>name</key>
-		<string>Guess Who?</string>
+		<string>Look Closer</string>
 		<key>questions</key>
 		<array>
 			<dict>
 				<key>points</key>
 				<integer>100</integer>
 				<key>category</key>
-				<string>Guess Who?</string>
+				<string>Look Closer</string>
 				<key>questionText</key>
-				<string>What animal is this?</string>
+				<string>What is this landmark, and where is it located?</string>
 				<key>questionType</key>
 				<string>image</string>
 				<key>mediaResourceName</key>
-				<string>dog_pic</string>
+				<string>col</string>
 				<key>answerText</key>
-				<string>A Golden Retriever</string>
+				<string>Colosseum, Rome, Italy</string>
 				<key>answerType</key>
-				<string>text</string>
+				<string>image</string>
 				<key>answerMediaResourceName</key>
-				<string></string>
+				<string>col</string>
 				<key>isAnswered</key>
 				<false/>
 			</dict>
@@ -359,15 +363,15 @@ Hufflepuff – Helga Hufflepuff</string>
 				<key>points</key>
 				<integer>200</integer>
 				<key>category</key>
-				<string>Guess Who?</string>
+				<string>Look Closer</string>
 				<key>questionText</key>
-				<string>Name this landmark.</string>
+				<string>Name the state</string>
 				<key>questionType</key>
 				<string>image</string>
 				<key>mediaResourceName</key>
-				<string>eiffel_pic</string>
+				<string>miz</string>
 				<key>answerText</key>
-				<string>The Eiffel Tower</string>
+				<string>Mizoram</string>
 				<key>answerType</key>
 				<string>text</string>
 				<key>answerMediaResourceName</key>
@@ -379,19 +383,19 @@ Hufflepuff – Helga Hufflepuff</string>
 				<key>points</key>
 				<integer>300</integer>
 				<key>category</key>
-				<string>Guess Who?</string>
+				<string>Look Closer</string>
 				<key>questionText</key>
-				<string>What country&apos;s flag is this?</string>
+				<string>Can you name the dog breed?</string>
 				<key>questionType</key>
 				<string>image</string>
 				<key>mediaResourceName</key>
-				<string>flag_pic</string>
+				<string>dog</string>
 				<key>answerText</key>
-				<string>Japan</string>
+				<string>Doberman</string>
 				<key>answerType</key>
-				<string>text</string>
+				<string>image</string>
 				<key>answerMediaResourceName</key>
-				<string></string>
+				<string>dog</string>
 				<key>isAnswered</key>
 				<false/>
 			</dict>
@@ -399,19 +403,19 @@ Hufflepuff – Helga Hufflepuff</string>
 				<key>points</key>
 				<integer>400</integer>
 				<key>category</key>
-				<string>Guess Who?</string>
+				<string>Look Closer</string>
 				<key>questionText</key>
-				<string>Name this famous painting.</string>
+				<string>What is the name of this bird?</string>
 				<key>questionType</key>
 				<string>image</string>
 				<key>mediaResourceName</key>
-				<string>mona_pic</string>
+				<string>bird</string>
 				<key>answerText</key>
-				<string>The Mona Lisa</string>
+				<string>Toucan</string>
 				<key>answerType</key>
-				<string>text</string>
+				<string>image</string>
 				<key>answerMediaResourceName</key>
-				<string></string>
+				<string>bird</string>
 				<key>isAnswered</key>
 				<false/>
 			</dict>
@@ -419,15 +423,15 @@ Hufflepuff – Helga Hufflepuff</string>
 				<key>points</key>
 				<integer>500</integer>
 				<key>category</key>
-				<string>Guess Who?</string>
+				<string>Look Closer</string>
 				<key>questionText</key>
-				<string>What nebula is shown here?</string>
+				<string>Can you tell where she is from?</string>
 				<key>questionType</key>
 				<string>image</string>
 				<key>mediaResourceName</key>
-				<string>space_pic</string>
+				<string>japan</string>
 				<key>answerText</key>
-				<string>The Orion Nebula</string>
+				<string>Japan</string>
 				<key>answerType</key>
 				<string>text</string>
 				<key>answerMediaResourceName</key>
@@ -452,6 +456,26 @@ Hufflepuff – Helga Hufflepuff</string>
 				<key>questionType</key>
 				<string>audio</string>
 				<key>mediaResourceName</key>
+				<string>aari</string>
+				<key>answerText</key>
+				<string>Bairan</string>
+				<key>answerType</key>
+				<string>text</string>
+				<key>answerMediaResourceName</key>
+				<string></string>
+				<key>isAnswered</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>points</key>
+				<integer>300</integer>
+				<key>category</key>
+				<string>Guess The Tune</string>
+				<key>questionText</key>
+				<string>Name the song</string>
+				<key>questionType</key>
+				<string>audio</string>
+				<key>mediaResourceName</key>
 				<string>bairan</string>
 				<key>answerText</key>
 				<string>Bairan</string>
@@ -464,17 +488,17 @@ Hufflepuff – Helga Hufflepuff</string>
 			</dict>
 			<dict>
 				<key>points</key>
-				<integer>200</integer>
+				<integer>300</integer>
 				<key>category</key>
-				<string>Guess Who?</string>
+				<string>Guess The Tune</string>
 				<key>questionText</key>
-				<string>Name this landmark.</string>
+				<string>Name the song</string>
 				<key>questionType</key>
-				<string>image</string>
+				<string>audio</string>
 				<key>mediaResourceName</key>
-				<string>eiffel_pic</string>
+				<string>bairan</string>
 				<key>answerText</key>
-				<string>The Eiffel Tower</string>
+				<string>Bairan</string>
 				<key>answerType</key>
 				<string>text</string>
 				<key>answerMediaResourceName</key>
@@ -486,15 +510,15 @@ Hufflepuff – Helga Hufflepuff</string>
 				<key>points</key>
 				<integer>300</integer>
 				<key>category</key>
-				<string>Guess Who?</string>
+				<string>Guess The Tune</string>
 				<key>questionText</key>
-				<string>What country&apos;s flag is this?</string>
+				<string>Name the song</string>
 				<key>questionType</key>
-				<string>image</string>
+				<string>audio</string>
 				<key>mediaResourceName</key>
-				<string>flag_pic</string>
+				<string>bairan</string>
 				<key>answerText</key>
-				<string>Japan</string>
+				<string>Bairan</string>
 				<key>answerType</key>
 				<string>text</string>
 				<key>answerMediaResourceName</key>
@@ -504,37 +528,17 @@ Hufflepuff – Helga Hufflepuff</string>
 			</dict>
 			<dict>
 				<key>points</key>
-				<integer>400</integer>
+				<integer>300</integer>
 				<key>category</key>
-				<string>Guess Who?</string>
+				<string>Guess The Tune</string>
 				<key>questionText</key>
-				<string>Name this famous painting.</string>
+				<string>Name the song</string>
 				<key>questionType</key>
-				<string>image</string>
+				<string>audio</string>
 				<key>mediaResourceName</key>
-				<string>mona_pic</string>
+				<string>bairan</string>
 				<key>answerText</key>
-				<string>The Mona Lisa</string>
-				<key>answerType</key>
-				<string>text</string>
-				<key>answerMediaResourceName</key>
-				<string></string>
-				<key>isAnswered</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>points</key>
-				<integer>500</integer>
-				<key>category</key>
-				<string>Guess Who?</string>
-				<key>questionText</key>
-				<string>What nebula is shown here?</string>
-				<key>questionType</key>
-				<string>image</string>
-				<key>mediaResourceName</key>
-				<string>space_pic</string>
-				<key>answerText</key>
-				<string>The Orion Nebula</string>
+				<string>Bairan</string>
 				<key>answerType</key>
 				<string>text</string>
 				<key>answerMediaResourceName</key>

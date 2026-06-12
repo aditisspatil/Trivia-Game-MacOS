@@ -134,7 +134,7 @@ struct QuestionPopupView: View {
                             Image(resourceName)
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
-                                .frame(height: 250) // Adjusted height slightly so it looks good
+                                .frame(minHeight: 150) // Adjusted height slightly so it looks good
                                 .cornerRadius(12)
                                 .shadow(radius: 5)
                         } else {
@@ -147,6 +147,7 @@ struct QuestionPopupView: View {
                         }
                         
                         Text(text).font(.title2).foregroundColor(.white)
+                            .multilineTextAlignment(.center)
                     }
             
         case .audio:
