@@ -99,10 +99,10 @@ class TriviaGameEngine: ObservableObject {
     @Published var categories: [Category] = []
     @Published var selectedQuestion: TriviaQuestion? = nil
     
-    @Published var team1Name: String = "Team 1"
+    @Published var team1Name: String = "Ritika"
     @Published var team1Score: Int = 0
     
-    @Published var team2Name: String = "Team 2"
+    @Published var team2Name: String = "Dhaivat"
     @Published var team2Score: Int = 0
     
     @Published var confettiTrigger: Int = 0
@@ -118,7 +118,6 @@ class TriviaGameEngine: ObservableObject {
         if !loadGame() {
             loadDefaultBoard() // If no save exists, load the fresh JSON
         }
-        loadDefaultBoard() // If no save exists, load the fresh JSON
 
     }
     
@@ -210,9 +209,9 @@ class TriviaGameEngine: ObservableObject {
         loadDefaultBoard()
         
         // Reset names and scores
-        team1Name = "Team 1"
+        team1Name = "Ritika"
         team1Score = 0
-        team2Name = "Team 2"
+        team2Name = "Dhaivat"
         team2Score = 0
         
         // Save the brand new state

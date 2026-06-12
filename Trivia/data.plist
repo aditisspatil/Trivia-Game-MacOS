@@ -73,7 +73,7 @@ Basketball: LeBron Jame
 			</dict>
 			<dict>
 				<key>points</key>
-				<integer>300</integer>
+				<integer>400</integer>
 				<key>category</key>
 				<string>Name Them!</string>
 				<key>questionText</key>
@@ -93,7 +93,7 @@ Basketball: LeBron Jame
 			</dict>
 			<dict>
 				<key>points</key>
-				<integer>400</integer>
+				<integer>500</integer>
 				<key>category</key>
 				<string>Name Them!</string>
 				<key>questionText</key>
@@ -127,7 +127,7 @@ Hufflepuff – Helga Hufflepuff</string>
 				<key>category</key>
 				<string>Fact-ferret</string>
 				<key>questionText</key>
-				<string>What is the hardest and strongest substance in the human body?</string>
+				<string>What is the hardest and strongest substance/material in the human body?</string>
 				<key>questionType</key>
 				<string>text</string>
 				<key>mediaResourceName</key>
@@ -144,6 +144,26 @@ Hufflepuff – Helga Hufflepuff</string>
 			<dict>
 				<key>points</key>
 				<integer>200</integer>
+				<key>category</key>
+				<string>Fact-ferret</string>
+				<key>questionText</key>
+				<string>What is the only country in the world whose national flag does not have four sides?</string>
+				<key>questionType</key>
+				<string>text</string>
+				<key>mediaResourceName</key>
+				<string></string>
+				<key>answerText</key>
+				<string>Nepal</string>
+				<key>answerType</key>
+				<string>image</string>
+				<key>answerMediaResourceName</key>
+				<string>nepal</string>
+				<key>isAnswered</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>points</key>
+				<integer>400</integer>
 				<key>category</key>
 				<string>Fact-ferret</string>
 				<key>questionText</key>
@@ -178,26 +198,6 @@ Hufflepuff – Helga Hufflepuff</string>
 				<string>image</string>
 				<key>answerMediaResourceName</key>
 				<string>venus</string>
-				<key>isAnswered</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>points</key>
-				<integer>400</integer>
-				<key>category</key>
-				<string>Fact-ferret</string>
-				<key>questionText</key>
-				<string>What is the only country in the world whose national flag does not have four sides?</string>
-				<key>questionType</key>
-				<string>text</string>
-				<key>mediaResourceName</key>
-				<string></string>
-				<key>answerText</key>
-				<string>Nepal</string>
-				<key>answerType</key>
-				<string>image</string>
-				<key>answerMediaResourceName</key>
-				<string>nepal</string>
 				<key>isAnswered</key>
 				<false/>
 			</dict>
