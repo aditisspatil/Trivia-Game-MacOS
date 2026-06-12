@@ -164,25 +164,46 @@ struct QuestionPopupView: View {
                             .font(.title2)
                             .foregroundColor(.white)
                         
-                        // NEW: Replay Button
-                        Button(action: {
-                            if !resourceName.isEmpty {
-                                // Triggers the audio manager to start the track over
-                                audioManager.playSound(soundName: resourceName, fileExtension: "m4a")
+                        HStack {
+                            Button(action: {
+                                if !resourceName.isEmpty {
+                                    // Triggers the audio manager to start the track over
+                                    audioManager.stopSound()
+                                }
+                            }) {
+                                HStack(spacing: 8) {
+                                    Image(systemName: "stop.fill")
+                                    Text("Stop")
+                                }
+                                .font(.title3).bold()
+                                .padding(.horizontal, 20)
+                                .padding(.vertical, 12)
+                                .background(Capsule().fill(team1Mint.opacity(0.2)))
+                                .foregroundColor(team1Mint)
                             }
-                        }) {
-                            HStack(spacing: 8) {
-                                Image(systemName: "arrow.clockwise.circle.fill")
-                                Text("Play Again")
+                            .buttonStyle(.plain)
+                            .padding(.top, 10)
+                            
+                            // NEW: Replay Button
+                            Button(action: {
+                                if !resourceName.isEmpty {
+                                    // Triggers the audio manager to start the track over
+                                    audioManager.playSound(soundName: resourceName, fileExtension: "m4a")
+                                }
+                            }) {
+                                HStack(spacing: 8) {
+                                    Image(systemName: "arrow.clockwise.circle.fill")
+                                    Text("Play Again")
+                                }
+                                .font(.title3).bold()
+                                .padding(.horizontal, 20)
+                                .padding(.vertical, 12)
+                                .background(Capsule().fill(team1Mint.opacity(0.2)))
+                                .foregroundColor(team1Mint)
                             }
-                            .font(.title3).bold()
-                            .padding(.horizontal, 20)
-                            .padding(.vertical, 12)
-                            .background(Capsule().fill(team1Mint.opacity(0.2)))
-                            .foregroundColor(team1Mint)
+                            .buttonStyle(.plain)
+                            .padding(.top, 10)
                         }
-                        .buttonStyle(.plain)
-                        .padding(.top, 10)
                     }
                     .onAppear {
                         if !resourceName.isEmpty {

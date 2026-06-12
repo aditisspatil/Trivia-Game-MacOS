@@ -458,7 +458,27 @@ Hufflepuff – Helga Hufflepuff</string>
 				<key>mediaResourceName</key>
 				<string>aari</string>
 				<key>answerText</key>
-				<string>Bairan</string>
+				<string>Aari Aari (Dhurandhar)</string>
+				<key>answerType</key>
+				<string>text</string>
+				<key>answerMediaResourceName</key>
+				<string></string>
+				<key>isAnswered</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>points</key>
+				<integer>200</integer>
+				<key>category</key>
+				<string>Guess The Tune</string>
+				<key>questionText</key>
+				<string>Name the song</string>
+				<key>questionType</key>
+				<string>audio</string>
+				<key>mediaResourceName</key>
+				<string>emo</string>
+				<key>answerText</key>
+				<string>Emosanal Atyachar</string>
 				<key>answerType</key>
 				<string>text</string>
 				<key>answerMediaResourceName</key>
@@ -488,7 +508,7 @@ Hufflepuff – Helga Hufflepuff</string>
 			</dict>
 			<dict>
 				<key>points</key>
-				<integer>300</integer>
+				<integer>400</integer>
 				<key>category</key>
 				<string>Guess The Tune</string>
 				<key>questionText</key>
@@ -496,9 +516,9 @@ Hufflepuff – Helga Hufflepuff</string>
 				<key>questionType</key>
 				<string>audio</string>
 				<key>mediaResourceName</key>
-				<string>bairan</string>
+				<string>pappu</string>
 				<key>answerText</key>
-				<string>Bairan</string>
+				<string>Pappu Can&apos;t Dance</string>
 				<key>answerType</key>
 				<string>text</string>
 				<key>answerMediaResourceName</key>
@@ -508,7 +528,7 @@ Hufflepuff – Helga Hufflepuff</string>
 			</dict>
 			<dict>
 				<key>points</key>
-				<integer>300</integer>
+				<integer>500</integer>
 				<key>category</key>
 				<string>Guess The Tune</string>
 				<key>questionText</key>
@@ -516,29 +536,9 @@ Hufflepuff – Helga Hufflepuff</string>
 				<key>questionType</key>
 				<string>audio</string>
 				<key>mediaResourceName</key>
-				<string>bairan</string>
+				<string>pyaar</string>
 				<key>answerText</key>
-				<string>Bairan</string>
-				<key>answerType</key>
-				<string>text</string>
-				<key>answerMediaResourceName</key>
-				<string></string>
-				<key>isAnswered</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>points</key>
-				<integer>300</integer>
-				<key>category</key>
-				<string>Guess The Tune</string>
-				<key>questionText</key>
-				<string>Name the song</string>
-				<key>questionType</key>
-				<string>audio</string>
-				<key>mediaResourceName</key>
-				<string>bairan</string>
-				<key>answerText</key>
-				<string>Bairan</string>
+				<string>Pyar ki Kashti Me (Kahona Pyar Hai)</string>
 				<key>answerType</key>
 				<string>text</string>
 				<key>answerMediaResourceName</key>
